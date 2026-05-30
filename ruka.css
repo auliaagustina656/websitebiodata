@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eee;
+}
+
+.navbar {
+  background: #728ca7;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+  box-shadow: 1px 1px 7px rgb(235, 220, 220);
+}
+
+/* Atas */
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;  /* bikin bloknya di tengah layar */
+}
+
+.group-img {
+  width: 320px;   /* sebelumnya 250px */
+  border-radius: 10px;
+  box-shadow: #bdc4d4;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;   /* ini yang bikin ke tengah */
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+/* Box */
+.desc-box {
+  background: #728ca7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: #bdc4d4;
+  margin: 30px auto;   /* ini bikin ke tengah */
+  max-width: 700px;    /* biar ga full */
+  color: black;
+  font-weight: 500;
+}
+
+.desc-box p,
+.desc-box li {
+  line-height: 1.6;
+}
+
+.desc-box ul {
+  margin-top: 10px;
+}
+
+.button-box {
+  background: #728ca7;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: #bdc4d4;
+
+  display: flex;
+  justify-content: space-between; /* kiri & kanan */
+}
+
+.button-box button {
+  background: #25505f;
+  box-shadow: #bdc4d4;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Bungkus biar sama lebar */
+.content-box {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+/* Kotak abu */
+.desc-box {
+  background: #728ca7;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 20px auto 10px; /* atas 20, bawah 10 */
+}
+
+.button-box {
+  background: #728ca7;
+  max-width: 700px;
+  margin: 10px auto 20px; /* atas 10, bawah 20 */
+  padding: 15px 20px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  background: #728ca7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Button */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  background: #728ca7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #aaa;        /* abu samar */
+}
+/* Responsive untuk HP */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr; /* jadi 1 kolom */
+  }
+
+  .card {
+    flex-direction: column; /* gambar di atas, teks di bawah */
+    align-items: flex-start;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+.fav-title {
+  text-align: center;
+  margin: 20px auto 10px;
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f1a2b;
+}
+.music-card {
+  background: #728ca7;
+  max-width: 700px;
+  margin: 15px auto;
+  padding: 20px;
+  box-shadow: #bdc4d4;
+
+  border-radius: 10px;
+  text-align: center;
+}
+
+.music-img {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: #bdc4d4;
+}
+
+.music-card h3 {
+  margin-top: 15px;
+  color: black;
+  font-size: 22px;
+}
+
+.spotify-btn {
+  display: inline-block;
+  margin-top: 5px;
+
+  background: #25505f;
+  color: white;
+  text-decoration: none;
+  box-shadow: #bdc4d4;
+
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  font-weight: 500;
+}
+
+.spotify-btn:hover {
+  opacity: 0.8;
+}
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media screen and (max-width: 600px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 10px;
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 25px;
+  }
+
+  /* Container */
+  .container {
+    padding: 15px;
+  }
+
+  /* Top section */
+  .top-section {
+    flex-direction: column; /* gambar jadi atas */
+    text-align: center;
+    gap: 15px;
+  }
+
+  .group-img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  /* Desc box */
+  .desc-box {
+    width: 90%;
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media screen and (max-width: 600px) {
+
+  /* Judul */
+  .fav-title {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  /* Card spotify */
+  .music-card {
+    width: 85%;
+    padding: 15px 10px;
+  }
+
+  /* Gambar album */
+  .music-img {
+    width: 180px;   /* diperkecil */
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Judul lagu */
+  .music-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* Tombol spotify */
+  .spotify-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  /* Button bawah */
+  .button-box {
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 10px;
+  }
+
+  .button-box button {
+    width: 160px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

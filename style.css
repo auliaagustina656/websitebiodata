@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eee;
+}
+
+.navbar {
+  background: #728ca7;
+  padding: 12px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* menu */
+.nav-menu {
+  display: flex;
+  justify-content: center; /* menu ke tengah */
+  gap: 10px;
+  flex-wrap: wrap;
+
+  margin-top: 10px;
+}
+
+/* kotak menu */
+.nav-menu a {
+  text-decoration: none;
+  color: #bdc4d4;
+  font-size: 14px;
+  font-weight: bold;
+
+  background: #bdc4d4;/* samar */
+  padding: 8px 14px;
+  border-radius: 0px;
+
+  transition: 0.3s;
+}
+
+/* efek hover */
+.nav-menu a:hover {
+  background:  #6E87A8;
+  color: white;
+}
+.navbar {
+  background: #728ca7;
+  padding: 10px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  width: 30px;
+}
+
+.brand {
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: white;
+}
+
+.navbar {
+  background: #728ca7;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  box-shadow: #bdc4d4;
+}
+
+.card {
+  background: #728ca7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 2px 3px 7px #bdc4d4;
+}
+
+.card img {
+  width: 140px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: #bdc4d4;
+}
+
+.text {
+  margin-left: 15px;
+}
+
+.text p {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.text a {
+  text-decoration: none;
+  background: #25505f;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Bungkus biar sama lebar */
+.content-box {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+/* Kotak abu */
+.desc-box {
+  background: #bdc4d4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: #bdc4d4;
+
+}
+
+/* Tombol */
+.button-group {
+  display: flex;
+  justify-content: space-between; /* kiri & kanan */
+  margin-top: 15px;
+}
+
+.button-group button {
+  background: #bdc4d4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: #bdc4d4;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #aaa;        /* abu samar */
+}
+
+/* Responsive untuk HP */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr; /* jadi 1 kolom */
+  }
+
+  .card {
+    flex-direction: column; /* gambar di atas, teks di bawah */
+    align-items: flex-start;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+.slider {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.slider img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: #bdc4d4;
+}
+.about-title {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 15px auto 20px;
+  color: #0f1a2b;
+}
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+}
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-menu {
+    justify-content: center;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .about-title {
+    font-size: 22px;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+
+}
