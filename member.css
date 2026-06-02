@@ -39,14 +39,14 @@ body {
 }
 
 .group-img {
-  width: 320px;   /* sebelumnya 250px */
+  width: 320px;   
   border-radius: 10px;
   box-shadow: #bdc4d4;
 }
 
 .top-section {
   display: flex;
-  justify-content: center;   /* ini yang bikin ke tengah */
+  justify-content: center;   
   align-items: center;
   gap: 20px;
   text-align: left;
@@ -58,8 +58,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: #bdc4d4;
-  margin: 30px auto;   /* ini bikin ke tengah */
-  max-width: 700px;    /* biar ga full */
+  margin: 30px auto;   
+  max-width: 700px;    
   color: black;
   font-weight: 500;
 }
@@ -82,7 +82,7 @@ body {
   box-shadow: #bdc4d4;
 
   display: flex;
-  justify-content: space-between; /* kiri & kanan */
+  justify-content: space-between; 
 }
 
 .button-box button {
@@ -107,13 +107,13 @@ body {
   padding: 20px;
   border-radius: 10px;
   max-width: 700px;
-  margin: 20px auto 10px; /* atas 20, bawah 10 */
+  margin: 20px auto 10px; 
 }
 
 .button-box {
   background: #728ca7;
   max-width: 700px;
-  margin: 10px auto 20px; /* atas 10, bawah 20 */
+  margin: 10px auto 20px; 
   padding: 15px 20px;
   border-radius: 10px;
 
