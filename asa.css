@@ -95,25 +95,25 @@ body {
   cursor: pointer;
 }
 
-/* Bungkus biar sama lebar */
+/* Bungkus*/
 .content-box {
   max-width: 700px;
   margin: 30px auto;
 }
 
-/* Kotak abu */
+/* Kotak biru */
 .desc-box {
   background: #728ca7;
   padding: 20px;
   border-radius: 10px;
   max-width: 700px;
-  margin: 20px auto 10px; /* atas 20, bawah 10 */
+  margin: 20px auto 10px; 
 }
 
 .button-box {
   background: #728ca7;
   max-width: 700px;
-  margin: 10px auto 20px; /* atas 10, bawah 20 */
+  margin: 10px auto 20px; 
   padding: 15px 20px;
   border-radius: 10px;
 
@@ -155,16 +155,16 @@ footer {
   padding: 15px;
   margin-top: 30px;
   font-size: 12px;
-  color: #aaa;        /* abu samar */
+  color: #aaa;        
 }
 /* Responsive untuk HP */
 @media (max-width: 600px) {
   .container {
-    grid-template-columns: 1fr; /* jadi 1 kolom */
+    grid-template-columns: 1fr;
   }
 
   .card {
-    flex-direction: column; /* gambar di atas, teks di bawah */
+    flex-direction: column;
     align-items: flex-start;
   }
 
