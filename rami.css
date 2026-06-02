@@ -95,13 +95,13 @@ body {
   cursor: pointer;
 }
 
-/* Bungkus biar sama lebar */
+/* Bungkus*/
 .content-box {
   max-width: 700px;
   margin: 30px auto;
 }
 
-/* Kotak abu */
+/* Kotak biru */
 .desc-box {
   background: #728ca7;
   padding: 20px;
